@@ -1,7 +1,5 @@
 package javaPrgm;
 
-import java.sql.SQLOutput;
-
 public class largestAmongThree {
     public static void main(String args[]){
         int a= 10000;

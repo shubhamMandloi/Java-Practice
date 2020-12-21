@@ -1,10 +1,5 @@
-
-import javax.sound.midi.Soundbank;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
-import java.sql.SQLOutput;
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
 
 class Subarray {

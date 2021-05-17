@@ -2,7 +2,6 @@ package javaPrgm;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 
 public class compareArray {
@@ -17,8 +16,11 @@ public class compareArray {
         System.out.println(list1.equals(list2));
         System.out.println(list1.equals(list3));
 
-        list3.removeAll(list1);
+
+        //list3.removeAll(list1);
+        list3.retainAll(list1);
         System.out.println(list3);
+
 
     }
 }

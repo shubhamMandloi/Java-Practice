@@ -1,8 +1,5 @@
 package HackerRank;
 
-import java.util.ArrayList;
-import java.util.Collections;
-
 interface OnlineAccount {
     int basePrice = 50;
     int regularMoviePrice = 100;
@@ -11,7 +8,7 @@ interface OnlineAccount {
 
 }
 
-public class Account implements OnlineAccount , Comparable<Account>   {
+public class Account implements OnlineAccount, Comparable<Account> {
 
     int noOfRegularMovies, noOfExclusiveMovies;
     String ownerName;
@@ -32,19 +29,18 @@ public class Account implements OnlineAccount , Comparable<Account>   {
 
     //3.
     @Override
-    public int compareTo(Account m)
-    {
+    public int compareTo(Account m) {
         return this.monthlyCost() - m.monthlyCost();
     }
 
     //4.
-    public String toString(){
-        return "Owner is "+ this.ownerName +" and monthly cost is "+ this.monthlyCost() + " USD.";
+    public String toString() {
+        return "Owner is " + this.ownerName + " and monthly cost is " + this.monthlyCost() + " USD.";
     }
 
 
     public static void main(String[] args) {
-        Account obj = new Account(5,2);
+        Account obj = new Account(5, 2);
         System.out.println(obj.toString());
 
 /*-

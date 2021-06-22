@@ -1,6 +1,16 @@
 package javaPrgm;
 
-class Base {
+class superBase{
+    static{
+        int intial =0;
+        System.out.println("inside super base initial");
+    }
+    superBase(){
+        System.out.println("inside super base const");
+    }
+}
+
+class Base extends  superBase{
 
     protected int i = 10;
 
@@ -10,7 +20,8 @@ class Base {
         return 0;
     }
 
-     Base() {
+    Base() {
+        System.out.println("inside parent const");
         i = 20;
     }
 
@@ -27,7 +38,7 @@ class Derived extends Base {
     Base n = new Base();
 
     Derived() {
-        super();
+
         i = 5;
 
     }

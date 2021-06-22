@@ -1,6 +1,8 @@
 package javaPrgm;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class Codility2 {
 

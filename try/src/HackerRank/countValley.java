@@ -1,12 +1,5 @@
 package HackerRank;
 
-import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.stream.Collectors;
-
 public class countValley {
 
     static int countVal(int step, String path){

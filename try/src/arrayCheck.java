@@ -1,9 +1,3 @@
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
-//import for Scanner and other utility classes
-import java.util.*;
 class TestClass {
     public static void main(String args[] ) throws Exception {
         /* Sample code to perform I/O:

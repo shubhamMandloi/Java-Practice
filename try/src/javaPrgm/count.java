@@ -1,6 +1,7 @@
 package javaPrgm;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Scanner;
 
 public class count {
 

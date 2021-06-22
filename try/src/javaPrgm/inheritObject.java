@@ -1,19 +1,24 @@
 package javaPrgm;
 
-class A {
+abstract class A {
     int x = 10;
     int y = 20;
-static int xy;
+    static int xy;
+
+    A() {
+        this.x = 20;
+    }
 
     void m1() {
         System.out.println("A m1");
     }
 
     static void m2() {
-        System.out.println("A m2--"+xy);
+        System.out.println("A m2--" + xy);
         xy++;
-        System.out.println("A m2--"+xy);
+        System.out.println("A m2--" + xy);
     }
+
     void m3() {
         System.out.println("A m3");
     }

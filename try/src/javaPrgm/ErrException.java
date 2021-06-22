@@ -11,8 +11,13 @@ public class ErrException {
         } catch (Exception e) {
             System.out.println("B");
 
-        } finally {
+        } /*catch(ArithmeticException e){
+
+        }*/
+
+        finally {
             System.out.println("C");
+
 
         }
         System.out.println("D");

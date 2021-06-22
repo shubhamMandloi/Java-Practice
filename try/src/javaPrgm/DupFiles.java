@@ -31,12 +31,15 @@ public class DupFiles {
                 String fileName = filePath.substring(filePath.lastIndexOf("\\") + 1);
                 String folderName = filePath.substring(0, filePath.lastIndexOf("\\"));
                 if (uniqueFileMap.containsKey(fileName)) {
+                    if(Files.size(Path.of(uniqueFileMap.get(fileName)+"\\"+fileName))==Files.size(Path.of(filePath))) {
+                        dupFileMap.put(fileName,
+                                uniqueFileMap.get(fileName) +  ", "
+                                        + folderName + " size :\\" + Files.size(Path.of(filePath)) / 1024 +
+                                        dupFileMap.getOrDefault("," + fileName, ""));
+                    }
 
-                        dupFileMap.put(fileName, uniqueFileMap.get(fileName) + ", "+folderName +","+ dupFileMap.getOrDefault(fileName, " "));
-
-                }else
-                    uniqueFileMap.put(fileName,folderName);
-
+                } else
+                    uniqueFileMap.put(fileName, folderName);
 
 
             }

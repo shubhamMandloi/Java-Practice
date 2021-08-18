@@ -16,7 +16,7 @@ interface arrayDemo {
 
 class ThreadDemo extends Thread implements arrayDemo {
 
-
+    @Override
     public void run() {
         try {
             String result = "Thread " +

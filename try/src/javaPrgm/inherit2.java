@@ -63,6 +63,8 @@ public class inherit2 {
         Base x = new Base();
         Base y = new Derived();
         Derived z = new Derived();
+
+
         DoPrint(x);
         DoPrint(y);
 

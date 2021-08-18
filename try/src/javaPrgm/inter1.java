@@ -18,6 +18,14 @@ abstract class abs2 implements inter, inter2 {
 
 }
 
+class cls3 extends abs2{
+
+    @Override
+    public void commonMethod(Object obj) {
+
+    }
+}
+
 interface inter2 {
 
     void commonMethod(Object obj);

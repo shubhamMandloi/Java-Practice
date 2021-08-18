@@ -17,7 +17,7 @@ import java.io.IOException;
 public class picMovee {
     public static void main(String[] args) {
 
-        String baseDirPath = "E:\\Pictures\\Family pics\\Diwali 2020";
+        String baseDirPath = "E:\\Pictures\\Papa Retirement party 07 Aug 2021";
         File baseDir = new File(baseDirPath);
 
         File[] getContents = baseDir.listFiles();

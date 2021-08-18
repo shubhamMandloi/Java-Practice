@@ -60,6 +60,7 @@ class inheritObject {
         System.out.println(a2.y);//30
         System.out.println(a2.z);//40
 
+
         a2.m1();// A m1
         a2.m2();//B m2
         a2.m3();//B m3

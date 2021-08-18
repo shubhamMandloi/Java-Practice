@@ -43,8 +43,8 @@ public class DupFiles {
 
 
             }
-            System.out.println("Unique file size : "+uniqueFileMap.size());
-            System.out.println("Duplicate file size : "+dupFileMap.size());
+            System.out.println("Unique file size : " + uniqueFileMap.size());
+            System.out.println("Duplicate file size : " + dupFileMap.size());
             dupFileMap.forEach((k, v) -> System.out.println("Duplicate  file :   " + k + " and folder is " + v));
 
 

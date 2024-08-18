@@ -5,7 +5,7 @@ package javaPrgm;
  */
 
 
-import org.apache.commons.io.FileUtils;
+//import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.io.IOException;
@@ -32,7 +32,7 @@ public class picMovee {
 
                 for (File subContent : getSubContents) {
 
-                    try {
+                    /*try {
                         if (subContent.getName().contains("jpg")) {
                             fileCount++;
                             FileUtils.moveFileToDirectory(subContent, baseDir, false);
@@ -42,7 +42,7 @@ public class picMovee {
                         // TODO Auto-generated catch block
                         System.out.println(e.getMessage());
                         e.printStackTrace();
-                    }
+                    }*/
                 }
                 System.out.println("Folder - " + content.getName() + "Processed");
             }

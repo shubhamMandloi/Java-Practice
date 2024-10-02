@@ -12,6 +12,7 @@ For nums[4]=3 there exist three smaller numbers than it (1, 2 and 2).
 
      */
     public static void main(String[] args) {
+        int[] input = new int[]{8,1,2,2,3};
 
     }
 }

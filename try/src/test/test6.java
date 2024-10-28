@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class test2 {
+public class test6 {
     public static void main(String[] args) {
         //{'hello': [1,2,3,4], 'world':[ 3,4,99]}
 

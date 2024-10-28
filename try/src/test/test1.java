@@ -1,3 +1,5 @@
+package test;
+
 import java.util.Arrays;
 
 public class test1 {
@@ -10,7 +12,10 @@ public class test1 {
                 nums[right] = nums[left];
                 nums[left] = temp;
                 left++;
+
             }
+            System.out.println();
+            Arrays.stream(nums).forEach(s-> System.out.print(s +" "));
         }
         System.out.println();
         Arrays.stream(nums).forEach(s-> System.out.print(s +" "));
@@ -26,5 +31,8 @@ public class test1 {
         System.out.println(sum);
         moveZeroes(new int[]{1,0,2,3,0,0,4});
 
-    }
+
+
+
+}
 }

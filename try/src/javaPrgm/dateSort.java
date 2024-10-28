@@ -15,10 +15,10 @@ public class dateSort {
         List<String> inputList = Arrays.asList(dateInputArray);
 
         Arrays.sort(dateInputArray);
-        System.out.println("#test sort");
+        System.out.println("#test.test sort");
 
         System.out.println(Arrays.toString(dateInputArray));
-        System.out.println("#after test sort");
+        System.out.println("#after test.test sort");
         System.out.println(Arrays.toString(dateInputArray));
         //System.out.println(String.format("%02d/%02d/%04d", dateInputArray[0].split("/")[0], dateInputArray[0].split("/")[1], dateInputArray[0].split("/")[2]));
         System.out.println(String.format("%02d", 3));

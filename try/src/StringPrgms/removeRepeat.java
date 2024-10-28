@@ -26,6 +26,8 @@ public class removeRepeat {
         return camelCase(input).replaceAll("(.)\\1+","$1");
     }
 
+
+
     public static void main(String[] args){
        // String input= "thiISss REeppeaatttT Worrdd1;";
         String input= "  thisss is a    testtttT   scriptTsssSS  ";

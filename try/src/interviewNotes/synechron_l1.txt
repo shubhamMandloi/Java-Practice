@@ -1,0 +1,53 @@
+
+
+
+RestAssured.baseURI url ="https://reqres.in/api/users";
+
+Response res = url.(
+											query (page,2)
+											).get();
+											
+if(200==res.getResponseCode())
+
+	JsonObject json =			res.getJsonPath("data");
+	
+	
+	
+	class data{
+	
+	int }
+			
+
+ ArrayList<String> inputList = new ArrayList<String>(Arrays.asList("Shubham","Ruchika","Venkat","Shubham"));
+        
+        
+        HashMap<String, Integer> hmap = new HashMap<String, Integer>();
+        
+        for( String eachString : inputList){
+            
+            hmap.put(eachString, hmap.getOrDefault(hmap.get(inputList),0)+1);
+            
+        }
+        
+        for(String eachKey : hmap.keys()){
+            if(hmap.get(eachKey)>1)
+                System.out.println("Duplicate name : "+ eachKey);      				
+        }
+		
+		-- file is protected
+		- file version is correct
+		- read access
+		
+		30 APIs , various methods
+		  public static void main(String[] args) {
+        String[] namesArray = {"Shubham","Venkat","Ruchika","Shubham"};
+        for(int i = 0; i<namesArray.length-1;i++){
+            for(int j = i+1 ; j<namesArray.length-1;j++)
+            
+                if(namesArray[i].equals(namesArray[j] ))
+                    System.out.println("Duplicate found :"+namesArray[i]);
+            
+                
+        }
+											
+			

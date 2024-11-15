@@ -1,0 +1,73 @@
+
+
+
+interface {
+}
+
+WebDriver driver = new ChromeDriver();
+
+
+
+class chromeDriver implements WebDriver
+
+interface webdriver extends searchCOnt
+
+
+class testListen implements iTestListeners throw fileInputoutpu{
+
+}
+
+- Singleton Pattern
+
+WebDriver driver ;
+
+public static WebDriver getDriver() {
+
+		if(driver == null) 
+			driver = new ChromeDriver ; 
+		else 
+			driver;
+			
+}
+
+abstract class classname {
+
+
+abstract void calc();
+int calc(){
+	return 1;
+}
+
+}
+
+
+
+super();
+
+super.parentVariable;
+super.instance();
+
+
+try{
+
+//sup code
+}
+
+catch(SQLExceptions sqe){
+
+}
+catch(Exception e)
+
+finally{
+dbConnection.close();
+}
+
+e.printstack();
+
+final int var1 = 1;
+var1 =2;
+
+final void -> 
+
+flnal class ->
+

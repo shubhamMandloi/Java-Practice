@@ -1,0 +1,25 @@
+RestAssured.baseURI = " ";
+
+
+String str = "{
+"id"="123",
+"name"="jon";
+}"
+Response res = RestAssured.given()
+							.header("key","key value")
+							
+							.post(str);
+							
+int resCode = res.getRestCode();
+
+if(resCode ==201) 
+	sout ( post)
+							
+							
+							.
+							
+							String str = response.jsonPath().get("data.find{it.user.userID});
+							if(str==null)
+							{
+								sout("userid is null") ;
+							}

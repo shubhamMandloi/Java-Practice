@@ -1,0 +1,18 @@
+Globant round 1 : 
+
+You are reviewing a PR, having inheritance code in it...
+What are your views that - why inheritance actually required in code...(Not related with reusability)
+- Examples of oops in day to day life
+- write a code in java to rotate array to right by 3 index
+- what are various applications of collection in automation 
+- what is concurrent hashmap
+- what is threadsafe, threads, multi threading and its significance 
+- visited one of webpage where need to hover on webelement then select from dropdown : https://seleniumbase.io/demo_page
+- locate elements by common xpath on google suggestion list ( while typing anything on google)
+- api validation
+- different response code , are they static or can be changed by developer as per their own wish
+- cicd exposure..which resources are used to run automation 
+- how reports are getting generated and diff between remote and local env.
+- if need to run test suite on remote/cloud what are possible options and how would you suggess to client
+- explain current automation suite
+

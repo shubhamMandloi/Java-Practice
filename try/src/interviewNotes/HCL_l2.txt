@@ -1,0 +1,17 @@
+
+@When ("I select {string} dropdown v Replace with text block Alt+Shift+Enter
+More actions... Alt+Enter
+public void i_search_for(String option, int num) throws InterruptedException {
+int num_of_rows = num;
+Thread.sleep(millis: 5000);
+System.out.println("finding show rows");
+WebElement showRows = driver.findElement(By.xpath( xpathExpression: "//span[.='Show rows']")); System.out.println("found show rows");
+WebElement rowDropDown = driver.findElement(By.xpath( xpath Expression: "//div[.='100']")); System.out.println("dropdown found");
+((JavascriptExecutor) driver).executeScript( script: "arguments[0].scrollIntoView(true);", rowDropDown);
+// Use JavaScript to click on the "100 Rows" option to avoid interception
+((JavascriptExecutor) driver).executeScript( script: "arguments[0].click();", rowDropDown);
+rowDropDown.click();
+WebElement rowButton = driver.findElement(By.xpath( xpathExpression: "//button[.='50']"));
+rowButton.click();
+System.out.println("50 selected");
+Thread.sleep(millis: 5000);

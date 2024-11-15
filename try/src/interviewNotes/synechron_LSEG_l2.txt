@@ -1,0 +1,50 @@
+employee
+empid,
+first name, 
+lastname, 
+email , 
+
+
+with cte1 as (select  empid,firstName, count(*) 
+	from employee	
+	group by firstName
+	having count(*) > 1),
+	with cte2 as (select  empid,lastnameName, count(*) 
+	from employee	
+	group by lastName
+	having count(*) > 1),
+	with cte1 as (select  empid,email, count(*) 
+	from employee	
+	group by email
+	having count(*) > 1),
+	select * from employee join cte1, cte2, cte3 on employee.empid = cte1.empID and 
+	
+	
+	
+	data = {}
+	data = pd.dataframe(data, column=())
+	
+	
+	
+	A = [hello, world, this, is, Python]
+	B = [e, i]
+	
+	
+	
+	ArrayList<String> input = Arrays.asList("hello, world", "this"," is", "Python");
+	ArrayList<String> checkInput= Arrays.asList("e","i");
+	ArrayList<String> result = new ArrayList<>();
+	
+	for( String str : input){
+		boolean isCheck = false;
+		for(String strCheck : checkInput){
+		
+			if(str.contains(strCheck))
+					isCheck = true;
+		}
+		
+		if(!isCheck){
+		result.remove(str);
+	}
+	
+	result.foreach

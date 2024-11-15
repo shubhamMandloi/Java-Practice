@@ -1,0 +1,40 @@
+
+
+RestAssured.BaseURI ="URL ";
+
+public void getAPI() throws IOException{
+Response res = RestAssured
+							.given()
+							.header(" api-KEY","user API TOKEN")
+							.get("/map");
+
+int resCode = res.getStatusCoce();
+if(resCode ==200)
+	btcID = res.jsonPath()
+
+}
+							put post
+							
+							
+							Collection
+							Set 
+							Queue
+							List
+							
+							Map 
+							
+							
+							int[] -> ArrayList<Integer>
+							
+				
+int[] inputarr	= new int[]{1,2,3};
+ArrayList<Integer> arr ;
+//ArrayList<Integer> arr = new ArrayList<Integer>();
+
+for(int i : inputarr){
+arr.add(i);
+}
+arr.foreach(i->System.out.print(i));
+
+
+

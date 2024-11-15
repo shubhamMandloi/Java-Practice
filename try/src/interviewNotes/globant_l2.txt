@@ -1,0 +1,98 @@
+Globant round 2
+
+prgm  : give max score from a game where 5 8 2
+
+
+score = 0;
+
+click 1 : 2 -> 0+2 =2
+click 2 : 5 -> 2-5 =-3
+click 3 : 8 -> -3+8 =5;
+
+
+max score ?
+
+
+5 99 7 88 74 8 10
+
+
+5 7 8 10 74 88 99 ->
+
+/*-
+sort number
+two pointer start and end
+add in result from end then start untill start >end
+click thru result
+*/
+
+ArrayList<Integer> input = new ArrayList<Integer>(Arrays.asList(5, 99, 7, 88, 74, 8, 10));
+
+Collections.sort(input);
+
+int start = 0;
+int end = input.size()-1;
+
+ArrayList<Integer> result = new ArrayList<Integer>();
+while(start<end){
+result.add(input.get(end));
+ end--;
+ if(start<end){
+ result.add(input.get(start));
+ start++;
+ }
+}
+
+result.foreach(s->system.out.print(s+" "));
+
+int sum=0;
+for(int index = 0 ; index <result.size();index++){
+ if(index%2==0)
+ sum=sum+result.get(index);
+ else
+ sum = sum-result.get(index);
+}
+system.out.println("Max score :"+sum);
+
+
+
+driver.switchTo.parentframe();
+
+If below nested iframes are there how to reach out last second iframe..
+iframe
+button
+	iframe
+	 button
+		 iframe
+		 button
+			 iframe
+			 button
+				 iframe
+				 button
+					 iframe
+					 button
+ 
+
+(//iframe)[1]/child::iframe/child::iframe
+
+while(driver.findElements(by.xpath(//iframe)))
+driver.switchTo().frame(by.xpath(//iframe))
+
+ 
+ If want to propose Features of a good automation suite to probable client using java selenium only... ...not having clear scope then what will be features : 
+ - parallel execution
+ - CI CD
+ - functional testing
+ - UI
+ - able to handle any complex components
+ - detailed reporting into desired way
+ - email
+ - response time for application
+ - multiple browser
+ - network throttling
+ - BDD
+
+Api : 
+If there is no documentation present then how can get knowledge about various methods and parameters --> using network tab in developer option then get to know about api calls
+
+If get() is giving 200 and also downloading a file but we just want to check status and limit file download.. what can we use --> options method
+ 

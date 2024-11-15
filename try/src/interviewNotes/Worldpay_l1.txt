@@ -1,0 +1,23 @@
+
+
+@smoke
+test3
+
+@smoke @test
+test1
+
+
+@test
+test2
+
+
+
+
+
+
+ChromeOptions co = new ChromeOptions();
+
+co.addArgment("--incongintoMode");
+
+Webdriver driver = new ChromeDriver(co);
+

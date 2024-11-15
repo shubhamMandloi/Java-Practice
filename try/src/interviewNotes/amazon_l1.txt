@@ -1,0 +1,121 @@
+Test Strategy
+: TEsting scope 
+       In SCope :  to test "Add to Cart" functionality for Amazon.in
+       Out scope : 
+: Testing env 
+        
+: TEsting levels : 
+        - UI 
+            - to test allignment of Button
+            - to test color of button
+            - to test support to various lang
+            - to support on various devices - Laptop, Mobile, Tablet
+            - to test button under various aspect ratios of display
+            - to test presence of button to all applicable product
+        - Functional Level 
+            - to test item should be added in cart
+            - to test button is visible for all applicable products
+            - to test button is not visible for all non applicable product
+            - to test button with multiple filters
+            - to test ability to add multiple product in cart
+            - to test ability to add multiple quantity in cart
+            - to test proper label displayed while adding in cart
+        - Backend level 
+            - to test db validation check for added product in cart
+            - to test any API for add to car ( if applicable)
+            - 
+        - Performance 
+            - to test button functionality with multiple users
+            - to test application under sudden spike of user
+            - to test functionality of button under various network speed by using throttling
+        - Accessibility level - 
+            - to test speech to text functionality applicable to this button
+            - to test 
+
+Testing tools : 
+        - Manual testing : 
+            application access of AUT
+            postman 
+            perf tool 
+        - Automation testing 
+            - Selenium
+            - Testing framework
+            
+Risk , dependencies and control: 
+        - Risk : Product functionality should be up and running fine.
+        
+
+Start and end critieria ;
+    Entry point : - "add to cart" is ready to test in Testing env
+                : testing users created with required access
+    Exit point : QA signoff provided with no further open defects.
+                    
+                
+Release : 
+    - details about past releases for application
+    -   
+    
+    
+    
+Write a program Find fourth largest element in below array by sorting the array  arr[] = {12, 35, 1, 10, 34, 1}
+
+
+public int findFourthLargeElement(int[] arr){
+    
+    //Arrays.sort(arr);
+    if(arr.length<4)
+        return -1;
+     
+     
+     int n = arr.length;
+     for(int i=0;i<n-1;i++){
+            for(int j = 0;j<n-i-1;j++)
+            if(arr[j]>arr[j+1]){
+                int temp = arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+         
+     }
+    
+    return arr[n-4]
+    
+}
+
+
+
+Pass 1 : i -0 , j = 0 to 5 : 12,1,19,34,1,35
+Pass 1 : i -0 , j = 0 to 6 : 12,1,19,34,1,35
+Pass 1 : i -0 , j = 0 to 6 : 12,1,19,34,1,35
+Pass 1 : i -0 , j = 0 to 6 : 12,1,19,34,1,35
+
+
+
+
+
+----
+
+T0 : 
+
+
+1. to test search functionality for artist provided , -> button should be give results
+2. to test search results : 
+    - Top results, Playlsit, album, corresponding to searched artist
+3. in case of input not matching with any artist , app should give relevant result / proper message -" no result found for "+ input
+4. multiple click for search should give same result
+5. as user start typing input, valid suggestions should be popped up
+6. cross buttong functionality
+7. search history should be maintained
+8. filter on basis of - 
+9. functionality should beaccessible under various platforms
+10 pref for logged in users
+
+
+non functional : 
+- simultenously multiple user should be able to use search functionality 
+- in lower networkspeed ( by using browser throttling) search functionality should be working
+- security testing
+- scalability : on increasing user request, system should be able to handle search functionality
+- stress testing
+- spike testing 
+- 

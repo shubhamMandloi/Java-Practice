@@ -1,0 +1,90 @@
+folder- packages  : 
+src/java/main : 
+pages
+
+
+src/java/test: 
+base ->  webdriver
+utility -> static method -> click , enter keys, ,write excel
+test -> stepdefination. 
+
+src/test/resource: 
+config -> 
+excel_input -> 
+features -> gherkin 
+
+
+pom
+testng.xml
+
+--------------------------
+
+//p[text()='6E 5308']/ancestor::div[2]/following-sibling::div[2]//p[1]
+--------------------
+ ArrayList<Integer> input = 
+    new ArrayList<>(Arrays.asList(-1,3,7,9,11));
+    Integer min =0, max = 0;
+    for(Integer current : input)
+    {
+        if(current >max)
+        max = current;
+        if(current <min)
+        min = current;
+    }
+    System.out.println("Max is "+ max);
+    System.out.println("Min is "+ min);
+
+---------------------
+
+ArrayList<String> input = 
+    new ArrayList<>(Arrays.asList("Geeks", "For", "ForGeeks", "GeeksforGeeks"));
+    Collections.sort(input);
+    for(String i : input){
+        System.out.println(i);
+    }ArrayList<String> input = 
+    new ArrayList<>(Arrays.asList("Geeks", "For", "ForGeeks", "GeeksforGeeks"));
+    Collections.sort(input);
+    for(String i : input){
+        System.out.println(i);
+    }
+	
+	
+	-------------------
+	abstract class Car {
+    static {
+        System.out.print("1");
+    }
+ 
+    public Car(String name) {
+        super();//
+        System.out.print("2");
+    }
+ 
+    {
+        System.out.print("3");
+    }
+}
+ 
+public class BlueCar extends Car {
+    {
+        System.out.print("4");
+    }
+ 
+    public BlueCar() {
+        super("blue");
+        System.out.print("5");
+    }
+ 
+    public static void main(String[] gears) {
+        new BlueCar();
+    }
+}
+
+
+
+--output 
+
+1
+2
+5
+4
